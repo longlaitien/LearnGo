@@ -173,6 +173,25 @@ func main() {
 			fmt.Println(s)
 		}
 		fmt.Println("S(n) = 1^2 + 2^2 + … + n^2 = ", s)
+	case 10:
+		n := 0
+		s := 0
+		var gt func(int) int
+		fmt.Println("Nhap n: ")
+		_, err := fmt.Scanln(&n)
+		if err != nil {
+			return
+		}
+		for i := 1; i <= n; i++ {
+			gt = func(j int) int {
+				if j == 1 {
+					return 1
+				}
+				return j * gt(j-1)
+			}
+			s += gt(i)
+		}
+		fmt.Println("S= ", s)
+	case 11:
 	}
-
 }
