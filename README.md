@@ -1,2 +1,0 @@
-# LearnGo
-Learn GoLang
