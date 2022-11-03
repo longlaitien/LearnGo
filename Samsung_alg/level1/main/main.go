@@ -1,8 +1,7 @@
 package main
 
-import i16 "../output"
+import ouput "../output"
 
 func main() {
-	i16.I0016()
+	ouput.I0018()
 }
-
